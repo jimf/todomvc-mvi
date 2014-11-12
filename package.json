@@ -1,0 +1,28 @@
+{
+  "name": "todomvc-mvi",
+  "version": "0.0.0",
+  "description": "TodoMVC example written in MVI",
+  "author": "Jim Fitzpatrick",
+  "license": "MIT",
+  "dependencies": {
+    "dom-delegator": "^11.0.0",
+    "rx": "^2.3.14",
+    "todomvc-common": "^0.3.1",
+    "underscore": "^1.7.0",
+    "vdom-virtualize": "0.0.4",
+    "virtual-dom": "0.0.21",
+    "virtual-hyperscript": "^4.5.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.3.2",
+    "jshint": "^2.5.10",
+    "uglify-js": "^2.4.15",
+    "uglifycss": "0.0.10",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "build": "mkdir -p dist/{css,js} && browserify src/app.js -o dist/js/app.js && uglifycss node_modules/todomvc-common/base.css > dist/css/app.css",
+    "dev": "watchify src/app.js -o dist/js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,51 @@
+{
+    // == Enforcing Options ===============================================
+    //
+    // These options tell JSHint to be more strict towards your code. Use
+    // them if you want to allow only a safe subset of JavaScript, very
+    // useful when your codebase is shared with a big number of developers
+    // with different skill levels.
+
+    "bitwise"       : false,    // Prohibit bitwise operators (&, |, ^, etc.).
+    "camelcase"     : true,     // Force all variable names to use camelCase or UPPER_CASE.
+    "curly"         : true,     // Require {} for every new block or scope.
+    "eqeqeq"        : true,     // Require triple equals i.e. `===`.
+    "es3"           : true,     // Support Internet Explorer 6/7/8/9—and other legacy JavaScript environments.
+    "forin"         : true,     // Tolerate `for in` loops without `hasOwnPrototype`.
+    "freeze"        : true,     // Prohibit overwriting prototypes of native objects such as Array, Date and so on.
+    "immed"         : true,     // Require immediate invocations to be wrapped in parens e.g. `( function(){}() );`
+    "indent"        : 4,        // Specify indentation spacing
+    "latedef"       : true,     // Prohibit variable use before definition.
+    "newcap"        : true,     // Require capitalization of all constructor functions e.g. `new F()`.
+    "noarg"         : true,     // Prohibit use of `arguments.caller` and `arguments.callee`.
+    "noempty"       : true,     // Prohibit use of empty blocks.
+    "nonew"         : true,     // Prohibit use of constructors for side-effects.
+    "plusplus"      : true,     // Prohibit use of `++` & `--`.
+    "quotmark"      : true,     // Enforce consistency of quotation marks used throughout code.
+    "regexp"        : true,     // Prohibit `.` and `[^...]` in regular expressions.
+    "undef"         : true,     // Require all non-global variables be declared before they are used.
+    "unused"        : true,     // Warn when you define and never use variables.
+    "strict"        : true,     // Require `use strict` pragma in every file.
+    "trailing"      : true,     // Prohibit trailing whitespaces.
+    "maxlen"        : 79,       // Maximum line length.
+    "maxdepth"      : 5,
+    "maxcomplexity" : 6,        // Maximum cyclomatic complexity.
+
+    // == Environments ====================================================
+    //
+    // These options pre-define global variables that are exposed by
+    // popular JavaScript libraries and runtime environments—such as
+    // browser or node.js.
+
+    "browser"       : true,     // Standard browser globals e.g. `window`, `document`.
+    "browserify"    : true,     // Using browserify.
+    "devel"         : false,    // Allow development statements e.g. `console.log();`.
+    "jquery"        : false,    // Enable globals exposed by jQuery JavaScript library.
+    "node"          : false,    // Enable globals available when code is running inside of the NodeJS runtime environment.
+    "nonstandard"   : false,    // Define non-standard but widely adopted globals such as escape and unescape.
+
+    "globals": {
+        "module": false,
+        "require": false
+    }
+}
